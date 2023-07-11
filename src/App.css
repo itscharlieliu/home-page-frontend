@@ -1,38 +1,178 @@
-.App {
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f1f1f1;
+}
+
+/* Hero Section styles */
+.hero {
   text-align: center;
+  padding: 100px;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
+/* About Section styles */
+.about-content {
+  text-align: center;
+  padding: 100px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-content img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Portfolio Section styles */
+#portfolio {
+  padding: 100px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+#portfolio h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Contact Section styles */
+#contact {
+  padding: 100px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-form form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .hero {
+      padding: 50px;
+    }
+
+    .about-content {
+      padding: 50px;
+    }
+
+    #portfolio {
+      padding: 50px;
+  }
+#contact {
+  padding: 50px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
