@@ -6,7 +6,13 @@
     flex-direction: row;
     align-items: center;
 
-    &>*:first-child {
-        margin-right: auto
-    }
+    position: absolute;
+}
+
+.header__title {
+    margin: 32px auto 32px 32px;
+}
+
+.header__action-buttons {
+    margin: 32px;
 }
