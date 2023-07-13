@@ -11,4 +11,12 @@
 .main-page__about-text {
     width: 50%;
     margin-left: 200px;
+    z-index: 2;
+}
+
+.main-page__decoration {
+    position: absolute;
+    right: 0;
+    height: 60%;
+    z-index: 1;
 }
