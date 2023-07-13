@@ -12,11 +12,14 @@
     width: 50%;
     margin-left: 200px;
     z-index: 2;
+
+    padding: 100px;
 }
 
 .main-page__decoration {
     position: absolute;
-    right: 0;
-    height: 60%;
+    width: 100%;
     z-index: 1;
+    opacity: 70%;
+    
 }
