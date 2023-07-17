@@ -3,6 +3,8 @@ import { MainPage } from "./components/pages/MainPage";
 import "./App.css";
 import { RouterProvider } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "@emotion/react";
+import { theme } from "./defs/theme";
 
 const router = createBrowserRouter([
   {
@@ -18,10 +20,12 @@ const router = createBrowserRouter([
 function App() {
   // TODO add routing
   return (
-    <div className="app">
-      <Header />
-      <RouterProvider router={router} />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="app">
+        <Header />
+        <RouterProvider router={router} />
+      </div>
+    </ThemeProvider>
   );
 }
 
