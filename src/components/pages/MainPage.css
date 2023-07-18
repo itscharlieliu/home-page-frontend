@@ -1,25 +1,6 @@
 .main-page {
     width: 100%;
-    height: 100%;
 
     display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-
-.main-page__about-text {
-    width: 50%;
-    margin-left: 200px;
-    z-index: 2;
-
-    padding: 100px;
-}
-
-.main-page__decoration {
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    opacity: 70%;
-    
+    flex-direction: column;
 }
