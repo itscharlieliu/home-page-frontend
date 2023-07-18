@@ -8,6 +8,11 @@ body {
   /* Theming */
     /* --main-bg-color: #FEFAE0; */
     --main-bg-color: #FFFFFF;
+    --main-bg-color-dark: #000000;
+
+    --main-text-color: #000000;
+    --main-text-color-dark: #FFFFFF;
+
     --primary-color: #CCD5AE;
     --primary-color-light: #E9EDC9;
     --secondary-color: #D4A373;
