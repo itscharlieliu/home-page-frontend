@@ -11,6 +11,11 @@ export const MainPage = () => {
         imageSrc="https://charlieliu-home-page.s3.us-west-1.amazonaws.com/DSC_0455.jpg"
       />
       <PageVariantGallery title="Featured Projects" galleryItems={PROJECTS} />
+      <PageVariantHero
+        title="Transforming visions into captivating digital experiences through code
+          and photography."
+        imageSrc="https://charlieliu-home-page.s3.us-west-1.amazonaws.com/DSC_0455.jpg"
+      />
     </div>
   );
 };

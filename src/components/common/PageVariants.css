@@ -1,8 +1,6 @@
 .page-variants {
     width: 100%;
     height: 1200px;
-    max-height: 100vh;
-    overflow: hidden;
     position: relative;
 }
 
@@ -33,6 +31,12 @@
     box-shadow: 0px 50px 70px 0px rgba(184,184,184,1);
 }
 
+.page-variants__gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .page-variants__gallery-title {
     margin: 100px 10%;
     padding: 20px;
@@ -41,11 +45,8 @@
 }
 
 .page-variants__gallery-carousel {
-    display: flex;
-    flex-direction: column;
-    position: static;
+    margin: 0 100px;
+    flex-shrink: 3;
+    width: min(800px, 80%);
 }
 
-.page-variants__gallery-image {
-    width: 70%;
-}
