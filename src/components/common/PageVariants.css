@@ -37,7 +37,7 @@
     align-items: center;
 }
 
-.page-variants__gallery-title {
+.page-variants__gallery-title.page-variants__gallery-title {
     margin: 100px 10%;
     padding: 20px;
     border-bottom: 5px solid ;
@@ -48,5 +48,21 @@
     margin: 0 100px;
     flex-shrink: 3;
     width: min(800px, 80%);
+}
+
+.page-variants__text-container {
+    height: 70%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 100px;
+}
+
+.page-variants__text-container > *:not(:first-child) {
+    margin-top: 50px;
 }
 

@@ -3,6 +3,7 @@ import "./PageVariants.css";
 import { GalleryItem } from "../../types/gallery";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { ReactElement } from "react";
 
 interface PageVariantHeroProps {
   imageSrc: string;
@@ -56,6 +57,28 @@ export const PageVariantGallery = ({
           </div>
         ))}
       </Carousel>
+    </div>
+  );
+};
+
+interface PageVariantTextProps {
+  title: string;
+  description: string;
+  actionButtons?: ReactElement;
+}
+
+export const PageVariantText = ({
+  title,
+  description,
+  actionButtons,
+}: PageVariantTextProps) => {
+  return (
+    <div className="page-variants  ">
+      <div className="page-variants__text-container">
+        <Typography variant="h2">{title}</Typography>
+        <Typography variant="h5">{description}</Typography>
+        <div>{actionButtons}</div>
+      </div>
     </div>
   );
 };
