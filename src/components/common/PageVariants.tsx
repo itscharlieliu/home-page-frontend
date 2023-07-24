@@ -82,3 +82,7 @@ export const PageVariantText = ({
     </div>
   );
 };
+
+export const PageVariantContact = () => {
+  return <div>Contact</div>;
+};
