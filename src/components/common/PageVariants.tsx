@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Button, Card, TextField, Typography } from "@mui/material";
 import "./PageVariants.css";
 import { GalleryItem } from "../../types/gallery";
 import { Carousel } from "react-responsive-carousel";
@@ -84,5 +84,30 @@ export const PageVariantText = ({
 };
 
 export const PageVariantContact = () => {
-  return <div>Contact</div>;
+  // TODO look into <Box> for form validation
+  return (
+    <div className="page-variants__contact-container">
+      <Typography variant="h5">Contact</Typography>
+      <div className="page-variants__contact-textfield-container">
+        <TextField
+          className="page-variants__contact-textfield"
+          variant="standard"
+          label="Email"
+        />
+        <TextField
+          className="page-variants__contact-textfield"
+          variant="standard"
+          label="Subject"
+        />
+        <TextField
+          className="page-variants__contact-textfield"
+          variant="outlined"
+          multiline
+          minRows={4}
+          label="Message"
+        />
+      </div>
+      <Button color="inherit">Send Message</Button>
+    </div>
+  );
 };

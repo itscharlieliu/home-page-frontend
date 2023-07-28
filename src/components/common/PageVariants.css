@@ -66,3 +66,19 @@
     margin-top: 50px;
 }
 
+.page-variants__contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+.page-variants__contact-textfield-container {
+    display: flex;
+    flex-direction: column;
+    width: min(600px, 80%);
+}
+
+.page-variants__contact-textfield-container.page-variants__contact-textfield-container > * {
+    margin:15px;
+}
